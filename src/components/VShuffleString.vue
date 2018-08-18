@@ -5,7 +5,7 @@ const startCharCode = 33
 const endCharCode = 126
 
 export default {
-  name: 'ShuffleString',
+  name: 'v-shuffle-string',
   data () {
     return {
       shuffled: []
@@ -97,9 +97,3 @@ export default {
     {{ shuffledString }}
   </span>
 </template>
-
-<style>
-.shuffle-string {
-  font-family: monospace;
-}
-</style>

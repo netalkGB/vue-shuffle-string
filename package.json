@@ -5,7 +5,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name vue-shuffle-string ./src/index.js",
+    "build": "vue-cli-service build --mode production --dest dist --target lib --name vue-shuffle-string ./src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
