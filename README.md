@@ -1,6 +1,8 @@
 # vue-shuffle-string
 
-shuffle string Vue component.
+shuffle string Vue component.  
+## demo
+ [here](https://jsfiddle.net/d6v0wxh8/).
 
 ## Usage
 
@@ -9,11 +11,18 @@ shuffle string Vue component.
 #### example
 
 ```
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-shuffle-string"></script>
 <body>
-    <v-shuffle-string string="Loading..." />
+    <div id="demo1">
+        <div>
+            <v-shuffle-string string="Loading..." />
+        </div>
+    </div>
 </body>
-<script src="/path/to/vue.js"></script>
-<script src="/path/to/vue-shuffle-string.umd.min.js"></script>
+<script>
+    new Vue({ el: '#demo1' })
+</script>
 ```
 
 ### Module(Single File Component)
@@ -65,14 +74,14 @@ export default {
 ```
 <v-shuffle-string string="Loading..." />
 ```
-
+[demo](https://jsfiddle.net/c9b5pdvz/)
 ```
 <div>
   <button @click="$refs.shuffleString.generateShuffleString()">start</button>
   <v-shuffle-string ref="shuffleString" :immediately="false" class="shuffle" string="Loading..." />
 </div>
 ```
-
+[demo](https://jsfiddle.net/ct1sazf8/)
 ```
 <template>
   <div>
@@ -89,7 +98,7 @@ export default {
   },
   methods: {
     done () {
-      alert('done')
+      console.log('done')
     }
   }
 }
@@ -101,9 +110,11 @@ export default {
 }
 </style>
 ```
+[demo](https://jsfiddle.net/oztjdy07/)
 
 ```
 <div>
   <v-shuffle-string time1="16" time2="32" count="16" string="Loading..." />
 </div>
 ```
+[demo](https://jsfiddle.net/abtq37kh/)
