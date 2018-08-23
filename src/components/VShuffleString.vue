@@ -93,7 +93,7 @@ export default {
 </script>
 
 <template>
-  <span class="shuffle-string">
+  <span>
     {{ shuffledString }}
   </span>
 </template>
