@@ -1,8 +1,10 @@
 # vue-shuffle-string
 
-shuffle string Vue component.  
+shuffle string Vue component.
+
 ## demo
- [here](https://jsfiddle.net/d6v0wxh8/).
+
+[here](https://jsfiddle.net/d6v0wxh8/).
 
 ## Usage
 
@@ -66,7 +68,7 @@ export default {
 
 |          | string | immediately | time1 | time2 | count |
 | -------- | ------ | ----------- | ----- | ----- | ----- |
-| required | ○      | x           | x     | x     | x     |
+| required | yes    | no          | no    | no    | no    |
 | default  |        | true        | '20'  | '40'  | '2'   |
 
 ## Example
@@ -74,14 +76,18 @@ export default {
 ```
 <v-shuffle-string string="Loading..." />
 ```
+
 [demo](https://jsfiddle.net/c9b5pdvz/)
+
 ```
 <div>
   <button @click="$refs.shuffleString.generateShuffleString()">start</button>
   <v-shuffle-string ref="shuffleString" :immediately="false" class="shuffle" string="Loading..." />
 </div>
 ```
+
 [demo](https://jsfiddle.net/ct1sazf8/)
+
 ```
 <template>
   <div>
@@ -110,6 +116,7 @@ export default {
 }
 </style>
 ```
+
 [demo](https://jsfiddle.net/oztjdy07/)
 
 ```
@@ -117,4 +124,5 @@ export default {
   <v-shuffle-string time1="16" time2="32" count="16" string="Loading..." />
 </div>
 ```
+
 [demo](https://jsfiddle.net/abtq37kh/)
