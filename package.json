@@ -1,6 +1,6 @@
 {
   "name": "vue-shuffle-string",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "private": false,
   "description": "Vue shuffle-string component.",
   "main": "src/index.js",
